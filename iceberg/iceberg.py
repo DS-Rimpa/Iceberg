@@ -1,8 +1,7 @@
 '''
 %%tags
 {
-    "lm_troux_uid":"7B962901-4D59-400C-B089-403B614DCDC3",
-    "deployment_guid":"27c934a3-ed8a-4ecf-ada4-c3699d8143e9"
+"":""
 }
 '''
 
