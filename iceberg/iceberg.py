@@ -40,7 +40,7 @@ conf = (
 spark = sparksession.builder.config(conf=conf).getOrCreate()
 print("Spark Running")
 
-inputDynamicframe = glueContext.create_dynamic_frame_from_options(connection_type ="s3",connection_options = {"paths": ["s3://lc-aug1-2023/hudi/source/"], "recurse": True },format = "csv", format_options={"withHeader": True}, transformation_ctx ="dyf")
+inputDynamicframe = glueContext.create_dynamic_frame_from_options(connection_type ="s3",connection_options = {"paths": ["s3://lc-aug1-2023/hudi/source/"], "recurse": True },format = "csv", format_options={"withHeader": True}, transformation_ctx ="inputDynamicframe")
 inputDf = inputDynamicframe.toDF()
 inputDf.show()
 inputDf.createOrReplaceTempView("pilot_view")
